@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:weightSum="5"
+android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/rlAddress"
+        android:layout_weight="4.5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:tint="@color/footerBack"
+            android:src="@drawable/address_u" />
+
+        <TextView
+            android:id="@+id/hTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:includeFontPadding="false"
+            android:layout_toRightOf="@+id/icon"
+
+            android:text="HOME"
+            android:textColor="@color/footerBack"
+            android:fontFamily="@font/seguisb"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hTv"
+            android:layout_marginLeft="20dp"
+
+            android:layout_toRightOf="@+id/icon"
+
+            android:maxLines="1"
+            android:text="18 Campbell Close, Bicester, Oxford, Bicester, Oxford 18 Campbell Close, Bicester, Oxford, Bicester, Oxford"
+            android:textColor="@color/color_black_inverse"
+            android:textSize="16sp"
+            android:fontFamily="@font/segoeui"
+            android:visibility="visible" />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/deleteIv"
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hTv"
+        android:layout_alignParentRight="true"
+        android:padding="5dp"
+        android:src="@drawable/ic_delete_forever_black_24dp"
+        android:tint="@color/color_black_inverse"
+        android:visibility="visible" />
+
+</LinearLayout>
